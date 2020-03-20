@@ -1,0 +1,81 @@
+Feature: The SKF application is able to display options under select bearing type dropdown menu # test_definitions/features/skf_wui/skf_wui.feature:1
+
+  Scenario: : Launching SKF website and clicking on Accept & Continue  # test_definitions/features/skf_wui/skf_wui.feature:3
+    Given I launch SKF website                                         # test_definitions/features/steps/skf_wui.py:12
+    When I click on Accept & Continue button                           # test_definitions/features/steps/skf_wui.py:17
+    And I click on Single Bearing image                                # test_definitions/features/steps/skf_wui.py:22
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.1 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:15
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Insert bearing (Y-bearing) is present                                                         # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.2 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:16
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Angular contact ball bearing is present                                                       # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.3 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:17
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Self-aligning ball bearing is present                                                         # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.4 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:18
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Cylindrical roller bearing is present                                                         # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.5 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:19
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Needle roller bearing is present                                                              # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.6 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:20
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Tapered roller bearing is present                                                             # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.7 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:21
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Spherical roller bearing is present                                                           # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.8 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:22
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: CARB toroidal roller bearing is present                                                       # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.9 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:23
+    When I click on Select bearing type dropdown                                                                        # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Thrust ball bearing is present                                                                # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                            # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.10 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:24
+    When I click on Select bearing type dropdown                                                                         # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Cylindrical roller thrust bearing is present                                                   # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                             # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.11 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:25
+    When I click on Select bearing type dropdown                                                                         # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Needle roller thrust bearing is present                                                        # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                             # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.12 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:26
+    When I click on Select bearing type dropdown                                                                         # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Spherical roller thrust bearing is present                                                     # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                             # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.13 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:27
+    When I click on Select bearing type dropdown                                                                         # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: track roller is present                                                                        # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                             # test_definitions/features/steps/skf_wui.py:48
+
+  Scenario Outline: Verify display options under select bearing type dropdown menu -- @1.14 Select bearing type options  # test_definitions/features/skf_wui/skf_wui.feature:28
+    When I click on Select bearing type dropdown                                                                         # test_definitions/features/steps/skf_wui.py:27
+    Then I verify option: Deep groove ball bearing is present                                                            # test_definitions/features/steps/skf_wui.py:34
+    And I close the dropdown                                                                                             # test_definitions/features/steps/skf_wui.py:48
+
+1 feature passed, 0 failed, 0 skipped
+15 scenarios passed, 0 failed, 0 skipped
+45 steps passed, 0 failed, 0 skipped, 0 undefined
+Took 1m22.461s
